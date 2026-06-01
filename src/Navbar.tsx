@@ -6,7 +6,7 @@ export default function Navbar() {
       style={{
         width: "100%",
         padding: "20px",
-        backgroundColor: "white",
+        backgroundColor: "lightblue",
         color: "black",
         boxSizing: "border-box"
       }}

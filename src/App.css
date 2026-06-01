@@ -199,8 +199,12 @@
 #deleteButton {
   background-color: red;
   padding: 5px;
-  border: 5px solid black;
+  border: 1px solid whitesmoke;
   cursor: pointer;
+}
+
+#deleteButton:hover {
+  background-color: darkred;
 }
 
 #deleteButton img {
@@ -212,8 +216,13 @@
   color: lightcoral;
 }
 
-#tempText, #descText {
+#tempText, #descText, #feelsLikeText {
   color: lightblue;
+
+}
+
+#noCitiesEntered {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 #nameText {
@@ -226,6 +235,63 @@
   max-width: 100%;
 }
 
-#navbar {
-  background-color: whitesmoke;
+#cardBottom {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#moreInfoButton {
+  cursor: pointer;
+  color: lightblue;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: darkblue;
+  border: 1px solid whitesmoke;
+}
+
+#moreInfoButton:hover {
+  background-color: blue;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.sun-background {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    #4facfe,
+    #55c2c8
+  );
+  z-index: 0;
+}
+
+.cloud-background {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    #7f8c8d,
+    #bdc3c7
+  );
+  z-index: 0;
+}
+
+.rain-background {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    #2c3e50,
+    #4ca1af
+  );
+  z-index: 0;
+} 
+
+#navbar, main {
+  position: relative;
+  z-index: 1;
 }
